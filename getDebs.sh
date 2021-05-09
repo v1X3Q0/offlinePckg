@@ -38,7 +38,7 @@ ListLibDeps()
         apt-get download $j 2>>errors.txt
         fi
     done
-
+    apt-get download ${curDep} 2>>errors.txt
 }
 
 args=("$@")
